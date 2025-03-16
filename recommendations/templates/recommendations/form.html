@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Construction Material Recommendation</title>
+</head>
+<body>
+    <h2>Enter Construction Details</h2>
+    <form method="POST">
+        {% csrf_token %}
+<!--        Cement Quality: <input type="text" name="cement_quality"><br>-->
+
+<!--        Brick Quality: <input type="text" name="brick_quality"><br>-->
+
+<!--        Sand Quality: <input type="text" name="sand_quality"><br>-->
+
+<!--        Iron Quality: <input type="text" name="iron_quality"><br>-->
+
+<!--        Environmental Condition: <input type="text" name="env_condition"><br>-->
+
+
+
+         <select name="name" required  >
+            <option value="Restaurants">Restaurants</option>
+            <option value="Resorts">Resorts</option>
+            <option value="Commercial Building">Commercial Building</option>
+            <option value="Residential Building">Residential Building</option>
+            <option value="Airports">Airports</option>
+            <option value="Bridges">Bridges</option>
+            <option value="Roads">Roads</option>
+            <option value="Highways">Highways</option>
+
+    </select>
+        <br>
+     cement quality
+    <select name="cement_quality">
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+            <option value="Medium" >Medium</option>
+        <option  selected></option>
+    </select>
+        <br>
+    brick quality
+    <select name="brick_quality">
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+            <option value="Medium" >Medium</option>
+        <option selected></option>
+    </select>
+        <br>
+    sand quality
+    <select name="sand_quality">
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+            <option value="Medium" >Medium</option>
+        <option selected></option>
+    </select>
+        <br>
+
+        Iron quality
+    <select name="iron_quality">
+            <option value="High">High</option>
+            <option value="Low">Low</option>
+            <option value="Medium" >Medium</option>
+        <option selected></option>
+    </select>
+        <br>
+        Environmental Condition:
+         <select name="env_condition">
+            <option value="tightsoil"> tightsoil</option>
+            <option value="loosesoil">loosesoil</option>
+            <option value="humidity" > humidity</option>
+             <option value="heavyrain"> heavyrain</option>
+            <option value="windy"> windy</option>
+            <option value="Hightemp" > Hightemp</option>
+        <option selected></option>
+    </select>
+
+        <button type="submit">Get Recommendation</button>
+    </form>
+</body>
+</html>
